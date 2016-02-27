@@ -1,0 +1,277 @@
+/*
+Author:
+Katarina Durasova
+
+License:
+The CSS and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* 
+color palette
+c_01: #F7F7F7 - light gray
+c_02: #D7D7D7 - darker gray
+c_03: #690000 - university red
+c_04: #490000 - dark red
+c_05: #CE0000 - red
+c_06: #FF0000 - light red   
+c_07: #FFF    - white
+c_08: #000    - black
+*/
+
+body {
+  font: 15px Arial; 
+  background: #F7F7F7; /*c_01*/
+  }
+
+section, #full_width{
+  font-size: 13px;
+  }
+  
+aside{
+  font-size: 13px;
+  }  
+  
+h1, h2, h3 {
+  font-family: "Lucida Sans", Verdana, Tahoma, Arial;                       
+  }
+
+/* --- margings and paddings --- */  
+/* - margings reset for (no margins) - */
+header, footer, h1, h4, p, figure, #menu ul, aside ul, section ul {
+  margin: 0px; 
+  }
+h2 {
+  color: #490000; /*c_04*/
+}
+h3 {
+  margin: 5px 0px; /*top and bottom margin/space*/
+  color: #CE0000; /*c_05*/
+}
+
+
+/* - paddings - */
+header, footer, aside, section, #full_width { 
+	padding: 10px 20px; /* top/bottom right/left */
+  }
+  aside li, section li {
+  list-style: none;
+  padding-left: 5px; /*text indent*/
+  }  
+  
+/* --- artificial vertial space class --- */
+.v_space {
+  padding: 5px 0px; /*height 10px*/ 
+} 
+
+
+/* --- --- */   
+footer {
+  font-size: 11px;
+  text-align: right;
+  clear: both;
+}  
+
+aside {
+  float: left;
+  margin: 3px 0px; /*top/bottom righ/left*/
+  width: 247px; /*187px; */    /*!*/
+}  
+
+section {
+  float: right;
+  margin: 3px 0px; /*top/bottom righ/left*/
+  width: 550px; /*width: 611px; *//*hardcoded :( 888-(0+1+20+187+20+1+3+3+1+20+20+1+0)=*/  /*!*/
+}
+
+#full_width p{
+  line-height: 140%;
+  text-align: justify;
+  padding-left: 5px;  /*in order to make visible text indent from header*/
+}
+
+section p, #full_width p{
+  text-align: justify;
+  padding-left: 5px;  /*in order to make visible text indent from header*/
+  }
+
+/*--- ---*/       
+#container {
+  color: #000; /*c_08*/
+  width: 888px; /*width optimized for auto+1+10+888+10+1+auto = auto+910*/
+  margin: 10px auto auto auto; /*placement of the mane container on the page*/
+  padding: 10px; /*for all*/ 
+}
+
+#menu {
+ margin-top: 3px; /*space between header and menu*/
+ padding: 5px 20px;
+ font-weight: bold;
+}
+
+#menu ul, aside ul, section ul {
+ padding: 0px;
+}
+
+#menu li {
+  display: inline;
+  padding-right: 20px;
+  /*font-family: "Lucida Sans", Verdana, Tahoma, Arial; */ /*in case we want the same font as in header*/    
+}
+
+ul#references{
+  padding: 0px;
+}
+
+ul#references li{
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  padding-left: 5px; 
+  width: 190px; /*three li in line, ul width 638px/3-5for padding = 207 resp 205-three columns*/
+}
+/*making second list item wider*/
+ul#references li:nth-child(2){ /*http://www.w3schools.com/cssref/sel_nth-child.asp*/
+  width: 235px; 
+}
+#references li h4{
+  padding: 0px;
+  }
+
+/* --- styles for containers/boxes ---*/
+/* - gray - */
+.box_style1 {
+  background: #F7F7F7; /*c_01*/
+  border: 1px solid #D7D7D7; /*c_02*/
+  border-radius: 3px;
+ }
+/* - invisible white + white border - */
+.box_style2 {
+  background: #FFF; /*c_07*/
+  border: 1px solid #FFF; /*c_07*/
+  border-radius: 3px;
+ }
+/* red- gradient */
+.box_style3 {
+  background: #690000; /* in case linear gradiet is not supported by browser*/
+  background: linear-gradient(#690000,#490000); /*c_04,c_03*/
+  /* background: linear-gradient(#CE0000,#690000); */ /*c_05,c_04*/  /*more visible gradient  with lighter red*/
+  border: 1px solid #490000; /*c_04*/
+  border-radius: 3px;
+  color: #FFF; /*c_07*/
+  }
+/* - white + gray border - */
+.box_style4 {
+  background: #FFF; /*c_07*/
+  border: 1px solid #D7D7D7; /*c_02*/
+  border-radius: 3px;
+ }
+
+.black_text {
+  color: #000; /*c_08*/
+}
+
+/* --- links style --- */
+a{
+	text-decoration: none;
+}
+/* unvisited link, visited link */
+a:link, a:visited {  
+  color: #CE0000; /*c_05*/
+	}  
+h4 a:link, h4:visited, #menu li a:link, #menu li a:visited, p a:link, p a:visited, #references li h4 a:link, #references li h4 a:visited{ 
+   color: #690000; /*c_03*/
+  } 
+/* mouse over link */ 
+a:hover, h4 a:link, #menu li a:hover, p a:hover, #references li h4 a:hover{
+  color: #FF0000; /*c_06*/
+  }  
+  
+/* icons for external files*/  
+#menu a.ext_no_icon{
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: url('');
+  padding-left: 0px;
+}
+h3 a.ext_pdf_right {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_pdf.gif');
+  padding-left: 0px;
+  padding-right: 20px;
+}
+a.ext_web_left {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_web.gif');
+  padding-left: 20px;
+}
+a[href*=".doc"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_doc.gif');
+  padding-left: 20px;
+	}
+a[href*=".pdf"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_pdf.gif');
+  padding-left: 20px;
+	}
+a[href*=".cdf"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_cdf.png');
+  padding-left: 20px;
+	}		
+a[href*=".r"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_r.gif');
+  padding-left: 20px;
+	}	
+a[href*=".R"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_r.gif');
+  padding-left: 20px;
+	}
+a[href*=".dta"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_dta.png');
+  padding-left: 20px;
+	}
+a[href*=".csv"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_csv.png');
+  padding-left: 20px;
+	}
+a[href*=".xls"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_xls.gif');
+  padding-left: 20px;
+	}
+a[href*=".xlsx"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_xls.gif');
+  padding-left: 20px;
+	}
+a[href*=".ppt"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_ppt.gif');
+  padding-left: 20px;
+	}
+a[href*=".zip"] {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('images/ext_zip.gif');
+  padding-left: 20px;
+	}
+
+
