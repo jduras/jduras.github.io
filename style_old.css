@@ -20,8 +20,7 @@ c_08: #000    - black
 */
 
 body {
-  font-size: 13px; 
-  font-family: Raleway, "Lucida Sans", Verdana, Tahoma, Arial;
+  font: 15px Arial; 
   background: #F7F7F7; /*c_01*/
   }
 
@@ -32,27 +31,23 @@ section, #full_width{
 aside{
   font-size: 13px;
   }  
-
-h2{
-  font-size: 17px;
+  
+h1, h3 {
+  font-family: "Lucida Sans", Verdana, Tahoma, Arial;                       
   }
 
-
 /* --- margings and paddings --- */  
-/* - margings reset (no margins) - */
+/* - margings reset for (no margins) - */
 header, footer, h1, h4, p, figure, #menu ul, aside ul, section ul {
   margin: 0px; 
   }
-h2 {
-  color: #890000; /*c_05*/
-}
 h3 {
-  margin: 5px 0px; /*top and bottom margin*/
-  color: #CE0000; /*c_04*/
+  margin: 5px 0px; /*top and bottom margin */
+  color: #CE0000; /*c_05*/
 }
 
 
-/* --- paddings --- */
+/* paddings */
 header, footer, aside, section, #full_width { 
 	padding: 10px 20px; /* top/bottom right/left */
   }
@@ -67,7 +62,7 @@ header, footer, aside, section, #full_width {
 } 
 
 
-/* --- elements --- */   
+/* --- --- */   
 footer {
   font-size: 11px;
   text-align: right;
@@ -77,13 +72,13 @@ footer {
 aside {
   float: left;
   margin: 3px 0px; /*top/bottom righ/left*/
-  width: 247px; /*187px; */    /*!*/
+  width: 157px; /*187px; */    /*!*/
 }  
 
 section {
   float: right;
   margin: 3px 0px; /*top/bottom righ/left*/
-  width: 550px; /*width: 611px; *//*hardcoded :( 888-(0+1+20+187+20+1+3+3+1+20+20+1+0)=*/  /*!*/
+  width: 640px; /*width: 611px; *//*hardcoded :( 888-(0+1+20+187+20+1+3+3+1+20+20+1+0)=*/  /*!*/
 }
 
 #full_width p{
@@ -100,38 +95,25 @@ section p, #full_width p{
 #container {
   color: #000; /*c_08*/
   width: 888px; /*width optimized for auto+1+10+888+10+1+auto = auto+910*/
-  margin: 10px auto auto auto; /*placement of the main container on the page*/
-  padding: 10px; /*for all*/ 
-}
-
-#container_wider {
-  color: #000; /*c_08*/
-  width: 1068px;
-  margin: 10px auto auto auto; /*placement of the main container on the page*/
+  margin: 10px auto auto auto; /*placement of the mane container on the page*/
   padding: 10px; /*for all*/ 
 }
 
 #menu {
  margin-top: 3px; /*space between header and menu*/
  padding: 5px 20px;
- font-size: 15px;
  font-weight: bold;
 }
 
-#menu ul {
- padding: 0px;
-}
-
-#aside ul, section ul {
+#menu ul, aside ul, section ul {
  padding: 0px;
 }
 
 #menu li {
   display: inline;
   padding-right: 20px;
-  /*font-family: Raleway, "Lucida Sans", Verdana, Tahoma, Arial; */ /*in case we want the same font as in header*/ 
+  /*font-family: "Lucida Sans", Verdana, Tahoma, Arial; */ /*in case we want the same font as in header*/    
 }
-
 
 ul#references{
   padding: 0px;
@@ -187,7 +169,7 @@ ul#references li:nth-child(2){ /*http://www.w3schools.com/cssref/sel_nth-child.a
 
 /* --- links style --- */
 a{
-  text-decoration: none;
+	text-decoration: none;
 }
 /* unvisited link, visited link */
 a:link, a:visited {  
@@ -215,13 +197,6 @@ h3 a.ext_pdf_right {
   padding-left: 0px;
   padding-right: 20px;
 }
-a.ext_pdf_right {
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_pdf.gif');
-  padding-left: 0px;
-  padding-right: 20px;
-}
 a.ext_web_left {
   background-position: center left;
   background-repeat: no-repeat;
@@ -238,36 +213,6 @@ a[href*=".pdf"] {
   background-position: center left;
   background-repeat: no-repeat;
   background-image: url('images/ext_pdf.gif');
-  padding-left: 20px;
-	}
-a[href*=".cdf"] {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_cdf.png');
-  padding-left: 20px;
-	}		
-a[href*=".r"] {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_r.gif');
-  padding-left: 20px;
-	}	
-a[href*=".R"] {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_r.gif');
-  padding-left: 20px;
-	}
-a[href*=".dta"] {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_dta.png');
-  padding-left: 20px;
-	}
-a[href*=".csv"] {
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-image: url('images/ext_csv.png');
   padding-left: 20px;
 	}
 a[href*=".xls"] {
