@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "blog",
+    "section": "",
+    "text": "posit::conf(2024)\n\n\n\n\n\n\narrow\n\n\nQuarto\n\n\n\n\n\n\n\n\n\nAug 13, 2024\n\n\nJan Duras\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/posit-conf-2024/index.html",
+    "href": "posts/posit-conf-2024/index.html",
+    "title": "posit::conf(2024)",
+    "section": "",
+    "text": "posit::conf came to Seattle!\n\nThe Big Data in R with Arrow introductory workshop on arrow package was a lot of fun. Can’t wait to try out some of what we learned at work.\nI also heard people talk about and show lots of cool, inspiring things that you can do with Quarto. I still remember how impressed I was back in 2015 when I first discovered R Markdown. But it’s 2024, time to move on and learn Quarto. So, here we go…"
+  }
+]
